@@ -41,6 +41,12 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
+        <meta name="msvalidate.01" content="B6FE76A783A1770409EC903DE2C7AC6A" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3614504270218797"
+          crossOrigin="anonymous"
+        ></script>
         <link
           rel="manifest"
           href="/site.webmanifest"
