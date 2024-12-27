@@ -24,6 +24,7 @@ import {
   Path,
   PLUGINS,
   REPO_URL,
+  NAV_URL,
 } from "../constant";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -305,6 +306,15 @@ export function SideBar(props: { className?: string }) {
                   shadow
                 />
               </Link>
+            </div>
+            <div className={styles["sidebar-action"]}>
+              <a href={NAV_URL} target="_blank" rel="noopener noreferrer">
+                <IconButton
+                  aria={Locale.Export.MessageFromChatGPT}
+                  icon={<DiscoveryIcon />}
+                  shadow
+                />
+              </a>
             </div>
             <div className={styles["sidebar-action"]}>
               <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
