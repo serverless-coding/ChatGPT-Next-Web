@@ -345,6 +345,19 @@ export function SideBar(props: { className?: string }) {
                 />
               </a>
             </div>
+            <div className={styles["sidebar-action"]}>
+              <a
+                href="https://programnotes.cn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IconButton
+                  aria={Locale.Export.MessageFromChatGPT}
+                  icon={<DiscoveryIcon />}
+                  shadow
+                />
+              </a>
+            </div>
           </>
         }
         secondaryAction={
