@@ -172,6 +172,15 @@
   overflow-x: hidden;
 }
 
+.sidebar-ad {
+  padding: 10px 14px 0;
+
+  :global(.adsbygoogle) {
+    width: 100%;
+    min-height: 60px;
+  }
+}
+
 .chat-item {
   padding: 10px 14px;
   background-color: var(--white);
