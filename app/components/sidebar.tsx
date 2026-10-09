@@ -32,7 +32,6 @@ import dynamic from "next/dynamic";
 import { Selector, showConfirm } from "./ui-lib";
 import clsx from "clsx";
 import { isMcpEnabled } from "../mcp/actions";
-import { GoogleAd } from "./google-ad";
 
 const DISCOVERY = [
   { name: Locale.Plugin.Name, path: Path.Plugins },
@@ -315,11 +314,6 @@ export function SideBar(props: { className?: string }) {
       >
         <ChatList narrow={shouldNarrow} />
       </SideBarBody>
-      {!shouldNarrow && (
-        <div className={styles["sidebar-ad"]}>
-          <GoogleAd />
-        </div>
-      )}
       <SideBarTail
         primaryAction={
           <>

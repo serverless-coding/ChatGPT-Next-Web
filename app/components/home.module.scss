@@ -172,24 +172,6 @@
   overflow-x: hidden;
 }
 
-.sidebar-ad {
-  flex-shrink: 0;
-  // 切断 flex 子项 min-width:auto 的传导，避免被广告固有宽度撑大侧边栏。
-  min-width: 0;
-  max-width: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
-  padding: 10px 0 0;
-
-  :global(.adsbygoogle) {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    min-height: 60px;
-    overflow: hidden;
-  }
-}
-
 .chat-item {
   padding: 10px 14px;
   background-color: var(--white);

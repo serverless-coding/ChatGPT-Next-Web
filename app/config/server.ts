@@ -1,5 +1,9 @@
 import md5 from "spark-md5";
-import { DEFAULT_MODELS, DEFAULT_GA_ID } from "../constant";
+import {
+  DEFAULT_MODELS,
+  DEFAULT_GA_ID,
+  DEFAULT_GOOGLE_ADSENSE_CLIENT,
+} from "../constant";
 import { isGPT4Model } from "../utils/model";
 
 declare global {
@@ -40,6 +44,9 @@ declare global {
 
       // google tag manager
       GTM_ID?: string;
+
+      // google adsense publisher client id
+      GOOGLE_ADSENSE_CLIENT?: string;
 
       // anthropic only
       ANTHROPIC_URL?: string;
@@ -248,6 +255,8 @@ export const getServerSideConfig = () => {
 
     gtmId: process.env.GTM_ID,
     gaId: process.env.GA_ID || DEFAULT_GA_ID,
+    adsenseClient:
+      process.env.GOOGLE_ADSENSE_CLIENT || DEFAULT_GOOGLE_ADSENSE_CLIENT,
 
     needCode: ACCESS_CODES.size > 0,
     code: process.env.CODE,

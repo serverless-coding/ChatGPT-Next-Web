@@ -816,5 +816,8 @@ export const internalAllowedWebDavEndpoints = [
 
 export const DEFAULT_GA_ID = "G-89WN60ZK2E";
 
+// Google AdSense 发布商 ID（page-level 脚本 + Auto Ads，广告由 Google 自动 overlay 注入）
+export const DEFAULT_GOOGLE_ADSENSE_CLIENT = "ca-pub-3614504270218797";
+
 export const SAAS_CHAT_URL = "https://nextchat.dev/chat";
 export const SAAS_CHAT_UTM_URL = "https://nextchat.dev/chat?utm=github";
