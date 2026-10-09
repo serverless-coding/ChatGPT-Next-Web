@@ -23,7 +23,8 @@ function GoogleAdComponent(props: { className?: string }) {
     ins.setAttribute("data-ad-client", AD_CLIENT);
     ins.setAttribute("data-ad-slot", AD_SLOT);
     ins.setAttribute("data-ad-format", "auto");
-    ins.setAttribute("data-full-width-responsive", "true");
+    // 侧边栏内的广告不能按整屏宽度渲染，否则会撑大侧边栏、把聊天窗口挤出容器。
+    ins.setAttribute("data-full-width-responsive", "false");
     container.appendChild(ins);
 
     try {
